@@ -24,13 +24,13 @@ export default function App() {
             <Text style={styles.right1}>X</Text>
           </View>
           <View style={styles.item}>
-            <Text>토스뱅크</Text>
+            <Text style={{ fontWeight: "bold" }}>토스뱅크</Text>
             <Text style={styles.right1}>{">"}</Text>
           </View>
           <View style={styles.row1}>
             <Text>★</Text>
             <View style={{ marginLeft: "20", marginRight: 3 }}>
-              <Text>100원</Text>
+              <Text style={styles.bold}>100원</Text>
               <Text>나라사랑우대통장</Text>
             </View>
             <Text style={styles.right2}>송금</Text>
@@ -44,7 +44,7 @@ export default function App() {
           <View style={styles.row2}>
             <Text>★</Text>
             <View style={{ marginLeft: "20", marginRight: 3 }}>
-              <Text>100,000원</Text>
+              <Text style={styles.bold}>100,000원</Text>
               <Text>6월에 쓴 돈</Text>
             </View>
             <Text style={styles.right2}>내역</Text>
@@ -52,7 +52,7 @@ export default function App() {
           <View style={styles.row1}>
             <Text>★</Text>
             <View style={{ marginLeft: "20", marginRight: 3 }}>
-              <Text>내 신용점수</Text>
+              <Text style={{ fontWeight: "bold" }}>내 신용점수</Text>
             </View>
             <Text style={styles.right2}>확인하기</Text>
           </View>
@@ -72,13 +72,17 @@ export default function App() {
           <View style={{ flexDirection: "row" }}>
             <View style={styles.row3}>
               <View style={{ marginLeft: "20", marginRight: 3 }}>
-                <Text>혜택 받는 {"\n"}신용카드</Text>
+                <Text style={{ fontWeight: "bold" }}>
+                  혜택 받는 {"\n"}신용카드
+                </Text>
               </View>
               <Text>★</Text>
             </View>
             <View style={styles.row4}>
               <View style={{ marginLeft: "20", marginRight: 3 }}>
-                <Text>혜택 받는 {"\n"}체크카드</Text>
+                <Text style={{ fontWeight: "bold" }}>
+                  혜택 받는 {"\n"}체크카드
+                </Text>
               </View>
               <Text>★</Text>
             </View>
@@ -86,17 +90,17 @@ export default function App() {
           <View style={styles.last}>
             <View style={styles.las}>
               <Text>★</Text>
-              <Text>오늘의 운세</Text>
+              <Text style={{ fontWeight: "bold" }}>오늘의 운세</Text>
               <Text style={styles.la}>{">"}</Text>
             </View>
             <View style={styles.las}>
               <Text>★</Text>
-              <Text>내 현금연수증</Text>
+              <Text style={{ fontWeight: "bold" }}>내 현금연수증</Text>
               <Text style={styles.la}>{">"}</Text>
             </View>
             <View style={styles.las}>
               <Text>★</Text>
-              <Text>토스프라임</Text>
+              <Text style={{ fontWeight: "bold" }}>토스프라임</Text>
               <Text style={styles.la}>{">"}</Text>
             </View>
           </View>
@@ -265,5 +269,9 @@ const styles = StyleSheet.create({
     alignItems: "center",
     borderColor: "#CCCCCC",
     paddingLeft: 30,
+  },
+  bold: {
+    fontSize: 17,
+    fontWeight: "bold",
   },
 });
