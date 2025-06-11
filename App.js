@@ -128,7 +128,7 @@ const styles = StyleSheet.create({
     backgroundColor: "#E0E0E0",
   },
   row: {
-    marginTop: 0, // ← marginTop 제거
+    marginTop: 0, 
     height: 60,
     backgroundColor: "#E0E0E0",
     flexDirection: "row",
